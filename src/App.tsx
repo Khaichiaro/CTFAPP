@@ -26,7 +26,7 @@ function App() {
       <h1>CTF Challenge: Decrypt the Flag</h1>
       <div className="card">
         <p><img src={door4} style={{ width: "500px" }} /></p>
-        <p>Cyphertext:</p>
+        {/* <p>Cyphertext:</p> */}
         <pre style={{ color: "white", cursor: "default" }}>{ciphertext}</pre>
         <input
           type="text"
