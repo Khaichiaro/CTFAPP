@@ -22,6 +22,7 @@ const App = () => {
 
   const [fileName, setFileName] = useState(""); 
 
+
   const handleMouseOver = (image: any) => {
     setFileName(image); 
   };
@@ -67,8 +68,9 @@ const App = () => {
 
   return (
     <div className="App">
+      <div className="page">
       <h1>Kidchuemaiork</h1>
-      <h1>CTF Challenge: Decrypt the Flag</h1>
+      <h1>CTF Challenge: Capture the Flag</h1>
       <div className="card">
         <p style={{fontSize: "12px"}}>
           H(<img src={door4} style={{ width: "500px" }} />)
@@ -116,7 +118,7 @@ const App = () => {
             <p className="correct">Correct!</p>
           <hr/>
           <p>
-            <p style={{fontSize: "14px"}}><a style={{color: "red"}}>*Hint: </a> "e = 3" and you can tranform HEX to DEC firt</p>
+            <p style={{fontSize: "14px"}}><a style={{color: "red"}}>*Hint: </a> "e = 3" and you can transform HEX to DEC first</p>
           </p>
           <input
             type="text"
@@ -129,6 +131,7 @@ const App = () => {
           {correct && <p className="correct">{correct}</p>}
         </div>
         )}
+      </div>
       </div>
     </div>
   );

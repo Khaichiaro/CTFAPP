@@ -3,10 +3,19 @@
   justify-items: center;
   text-align: center;
   position: relative;
-  left: 35%;
+  /* left: 35%; */
   padding: 2rem;
 }
 
+.page{
+  width: 100vh;
+  /* display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  right: 0%; */
+  margin-left: 65%;
+}
 .card {
   margin: 1rem auto;
   padding: 1rem;
