@@ -10,7 +10,7 @@ const rsaAnswer = import.meta.env.VITE_RSA_ANSWER;
 
 const App = () => {
   const [ciphertext,] = useState(
-    "19da98d1adf4fe40fe870045428c524346edf685cacecad6bbf4c069e3674155"
+    "Ciphertext: 19da98d1adf4fe40fe870045428c524346edf685cacecad6bbf4c069e3674155"
   );
   const [decryptedText, setDecryptedText] = useState(""); 
   const [error, setError] = useState(""); 
@@ -73,7 +73,7 @@ const App = () => {
       <h1>CTF Challenge: Capture the Flag</h1>
       <div className="card">
         <p style={{fontSize: "12px"}}>
-          H(<img src={door4} style={{ width: "500px" }} />)
+          H(<img src={door4} style={{ width: "550px" }} />)
         </p>
         {/* <div style={{backgroundColor: "white", zIndex: "0"}}> */}
           <pre style={{ color: "white", cursor: "default", fontSize: "12px"}}>{ciphertext}</pre>
